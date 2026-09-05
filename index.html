@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kartik Kasar's accessible personal portfolio website.">
+  <meta name="author" content="Kartik Kasar">
+  <title>Kartik Kasar | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html" aria-label="Kartik Kasar home">Kartik<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">ENTC Engineering Student</p>
+        <h1 id="hero-title">Hi, I'm Kartik Kasar.</h1>
+        <p class="lead">I am an Electronics & Telecommunication engineering student interested in web development, IoT, electronics and practical technology projects.</p>
+        <div class="hero-actions">
+          <a class="button" href="projects.html">View my projects</a>
+          <a class="button secondary" href="contact.html">Contact me</a>
+        </div>
+      </div>
+      <div aria-label="Profile placeholder">
+        <div class="avatar" role="img" aria-label="Kartik Kasar profile initials">KK</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="highlights-title">
+    <div class="container">
+      <h2 id="highlights-title">What I focus on</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Web Development</h3>
+          <p>Building structured, responsive and accessible websites using HTML and CSS.</p>
+        </article>
+        <article class="card">
+          <h3>IoT & Electronics</h3>
+          <p>Exploring sensors, ESP32-based systems and electronics applications.</p>
+        </article>
+        <article class="card">
+          <h3>Continuous Learning</h3>
+          <p>Developing programming, engineering and problem-solving skills through projects and practice.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" aria-labelledby="skills-title">
+    <div class="container">
+      <h2 id="skills-title">Core skills</h2>
+      <ul class="tag-list" aria-label="Core skills list">
+        <li class="tag">HTML5</li><li class="tag">CSS3</li><li class="tag">C Programming</li>
+        <li class="tag">MATLAB</li><li class="tag">IoT</li><li class="tag">ESP32</li>
+        <li class="tag">Problem Solving</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; 2026 Kartik Kasar. All rights reserved.</p>
+    <p><a href="contact.html">Get in touch</a></p>
+  </div>
+</footer>
+</body>
+</html>

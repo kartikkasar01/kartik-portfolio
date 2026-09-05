@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Kartik Kasar through an accessible portfolio contact form.">
+  <meta name="author" content="Kartik Kasar">
+  <title>Kartik Kasar | Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html" aria-label="Kartik Kasar home">Kartik<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+  <section class="page-hero" aria-labelledby="page-title">
+    <div class="container">
+      <p class="eyebrow">Contact</p>
+      <h1 id="page-title">Let's connect.</h1>
+      <p class="lead">Use the accessible form below to send a message or ask about a project.</p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="contact-form-title">
+    <div class="container content-grid">
+      <div class="card">
+        <h2 id="contact-form-title">Send a message</h2>
+        <p id="form-description" class="form-help">Fields marked with * are required.</p>
+
+        <form action="#" method="post" aria-describedby="form-description">
+          <div>
+            <label for="name">Full name *</label>
+            <input id="name" name="name" type="text" autocomplete="name" required aria-required="true">
+          </div>
+
+          <div>
+            <label for="email">Email address *</label>
+            <input id="email" name="email" type="email" autocomplete="email" required aria-required="true">
+          </div>
+
+          <div>
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" autocomplete="off">
+          </div>
+
+          <div>
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required aria-required="true" aria-describedby="message-help"></textarea>
+            <p id="message-help" class="form-help">Please briefly describe your question or project.</p>
+          </div>
+
+          <button class="button" type="submit">Send message</button>
+        </form>
+      </div>
+
+      <aside class="card" aria-labelledby="contact-info-title">
+        <h2 id="contact-info-title">Contact information</h2>
+        <p><strong>Name:</strong> Kartik Kasar</p>
+        <p><strong>Field:</strong> Electronics & Telecommunication Engineering</p>
+        <p><strong>Location:</strong> Pune, India</p>
+        <p>For a real submission, replace this section with your preferred email address and professional links.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section section-alt" aria-labelledby="accessibility-title">
+    <div class="container">
+      <h2 id="accessibility-title">Accessibility features</h2>
+      <div class="cards">
+        <article class="card"><h3>Keyboard friendly</h3><p>All interactive elements can be reached with keyboard navigation and have visible focus indicators.</p></article>
+        <article class="card"><h3>Screen-reader friendly</h3><p>Semantic landmarks, descriptive labels, headings and accessible navigation are used throughout.</p></article>
+        <article class="card"><h3>Responsive</h3><p>The layout adapts to mobile, tablet and desktop screen sizes without horizontal scrolling.</p></article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; 2026 Kartik Kasar. All rights reserved.</p>
+    <p><a href="index.html">Back to home</a></p>
+  </div>
+</footer>
+</body>
+</html>
