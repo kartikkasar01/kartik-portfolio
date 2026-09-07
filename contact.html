@@ -1,98 +1,105 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Contact Kartik Kasar through an accessible portfolio contact form.">
-  <meta name="author" content="Kartik Kasar">
-  <title>Kartik Kasar | Contact</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Kartik Kasar through an accessible and keyboard-friendly contact form.">
+    <meta name="author" content="Kartik Kasar">
+    <title>Kartik Kasar | Contact</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<a class="skip-link" href="#main-content">Skip to main content</a>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="logo" href="index.html" aria-label="Kartik Kasar home">Kartik<span>.</span></a>
-    <nav aria-label="Main navigation">
-      <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html" aria-current="page">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html" aria-label="Kartik Kasar home">KK<span>.</span></a>
+            <nav class="main-nav" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a class="active" aria-current="page" href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-<main id="main-content">
-  <section class="page-hero" aria-labelledby="page-title">
-    <div class="container">
-      <p class="eyebrow">Contact</p>
-      <h1 id="page-title">Let's connect.</h1>
-      <p class="lead">Use the accessible form below to send a message or ask about a project.</p>
-    </div>
-  </section>
+    <main id="main-content">
+        <section class="page-hero" aria-labelledby="page-title">
+            <div class="container">
+                <p class="eyebrow">Let's connect</p>
+                <h1 id="page-title">Contact Me</h1>
+                <p class="lead">Have a question, idea or project? Send a message.</p>
+            </div>
+        </section>
 
-  <section class="section" aria-labelledby="contact-form-title">
-    <div class="container content-grid">
-      <div class="card">
-        <h2 id="contact-form-title">Send a message</h2>
-        <p id="form-description" class="form-help">Fields marked with * are required.</p>
+        <section class="section" aria-labelledby="contact-title">
+            <div class="container contact-grid">
+                <aside class="contact-info" aria-labelledby="contact-title">
+                    <p class="eyebrow">Contact details</p>
+                    <h2 id="contact-title">Start a conversation.</h2>
+                    <p>
+                        The form is designed to be keyboard accessible and includes
+                        explicit labels, required-field indicators and useful autocomplete hints.
+                    </p>
 
-        <form action="#" method="post" aria-describedby="form-description">
-          <div>
-            <label for="name">Full name *</label>
-            <input id="name" name="name" type="text" autocomplete="name" required aria-required="true">
-          </div>
+                    <address>
+                        <p><strong>Email</strong><br>
+                            <a href="mailto:kartik.kasar@example.com">kartik.kasar@example.com</a>
+                        </p>
+                        <p><strong>Location</strong><br>Pune, Maharashtra, India</p>
+                        <div class="social-links" aria-label="Social profiles"><a class="social-link" href="https://www.instagram.com/kartikkasar01_/" target="_blank" rel="noopener noreferrer" aria-label="Open Kartik Kasar Instagram profile">📸 Instagram</a><a class="social-link" href="https://www.linkedin.com/in/kartik-kasar-06a7a72a0/" target="_blank" rel="noopener noreferrer" aria-label="Open Kartik Kasar LinkedIn profile">💼 LinkedIn</a></div>
+                    </address>
+                </aside>
 
-          <div>
-            <label for="email">Email address *</label>
-            <input id="email" name="email" type="email" autocomplete="email" required aria-required="true">
-          </div>
+                <div class="form-card">
+                    <form action="#" method="post" aria-labelledby="form-title">
+                        <h2 id="form-title">Send a Message</h2>
+                        <p class="form-note"><span aria-hidden="true">*</span> Required fields</p>
 
-          <div>
-            <label for="subject">Subject</label>
-            <input id="subject" name="subject" type="text" autocomplete="off">
-          </div>
+                        <div class="form-group">
+                            <label for="name">Full Name <span aria-hidden="true">*</span></label>
+                            <input type="text" id="name" name="name"
+                                   autocomplete="name" required
+                                   aria-required="true"
+                                   placeholder="Enter your full name">
+                        </div>
 
-          <div>
-            <label for="message">Message *</label>
-            <textarea id="message" name="message" required aria-required="true" aria-describedby="message-help"></textarea>
-            <p id="message-help" class="form-help">Please briefly describe your question or project.</p>
-          </div>
+                        <div class="form-group">
+                            <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                            <input type="email" id="email" name="email"
+                                   autocomplete="email" required
+                                   aria-required="true"
+                                   placeholder="you@example.com">
+                        </div>
 
-          <button class="button" type="submit">Send message</button>
-        </form>
-      </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject"
+                                   autocomplete="off"
+                                   placeholder="What is your message about?">
+                        </div>
 
-      <aside class="card" aria-labelledby="contact-info-title">
-        <h2 id="contact-info-title">Contact information</h2>
-        <p><strong>Name:</strong> Kartik Kasar</p>
-        <p><strong>Field:</strong> Electronics & Telecommunication Engineering</p>
-        <p><strong>Location:</strong> Pune, India</p>
-        <p>For a real submission, replace this section with your preferred email address and professional links.</p>
-      </aside>
-    </div>
-  </section>
+                        <div class="form-group">
+                            <label for="message">Message <span aria-hidden="true">*</span></label>
+                            <textarea id="message" name="message" rows="6"
+                                      required aria-required="true"
+                                      placeholder="Write your message here..."></textarea>
+                        </div>
 
-  <section class="section section-alt" aria-labelledby="accessibility-title">
-    <div class="container">
-      <h2 id="accessibility-title">Accessibility features</h2>
-      <div class="cards">
-        <article class="card"><h3>Keyboard friendly</h3><p>All interactive elements can be reached with keyboard navigation and have visible focus indicators.</p></article>
-        <article class="card"><h3>Screen-reader friendly</h3><p>Semantic landmarks, descriptive labels, headings and accessible navigation are used throughout.</p></article>
-        <article class="card"><h3>Responsive</h3><p>The layout adapts to mobile, tablet and desktop screen sizes without horizontal scrolling.</p></article>
-      </div>
-    </div>
-  </section>
-</main>
+                        <button class="button primary submit-button" type="submit">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <p>&copy; 2026 Kartik Kasar. All rights reserved.</p>
-    <p><a href="index.html">Back to home</a></p>
-  </div>
-</footer>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Kartik Kasar. All rights reserved.</p>
+            <p>Semantic HTML5 • Responsive • Accessible</p>
+        </div>
+    </footer>
 </body>
 </html>
