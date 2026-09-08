@@ -1,6 +1,15 @@
-KARTIK KASAR — THIRANEX TASK 2
-Advanced CSS3 & Responsive Architecture
+KARTIK KASAR — TASK 3
+JavaScript Logic & State Management
 
-Features: CSS Grid, Flexbox, mobile-first responsive media queries, CSS custom properties, light/dark theme, hover/focus states, reduced-motion support, responsive profile image, semantic HTML5.
+Features:
+• Full CRUD (Create, Read, Update, Delete)
+• Automatic window.localStorage persistence
+• All / Active / Completed filtering
+• Dynamic DOM elements
+• Event delegation
+• Task counters
+• Clear completed
+• Responsive accessible UI
 
-Files: index.html, about.html, projects.html, contact.html, css/style.css, js/theme.js, images/profile.jpg
+Run: open index.html in a modern browser.
+Test: add, edit, complete, delete, filter, clear completed, then refresh.
