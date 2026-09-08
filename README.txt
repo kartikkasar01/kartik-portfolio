@@ -1,19 +1,6 @@
-KARTIK KASAR — PROFESSIONAL PORTFOLIO
+KARTIK KASAR — THIRANEX TASK 2
+Advanced CSS3 & Responsive Architecture
 
-Files:
-- index.html      Home page
-- about.html      About page
-- projects.html   Projects page
-- contact.html    Accessible contact page
-- css/style.css   Responsive professional styling
-- images/profile.jpg  Profile photo
+Features: CSS Grid, Flexbox, mobile-first responsive media queries, CSS custom properties, light/dark theme, hover/focus states, reduced-motion support, responsive profile image, semantic HTML5.
 
-GitHub Pages:
-1. Replace the contents of your existing kartik-portfolio folder with this folder's contents.
-2. Open GitHub Desktop.
-3. Commit message: Update professional portfolio with profile photo
-4. Click Commit to main.
-5. Click Push origin.
-
-Important:
-Keep the folder structure exactly as shown above. The image path is images/profile.jpg.
+Files: index.html, about.html, projects.html, contact.html, css/style.css, js/theme.js, images/profile.jpg
